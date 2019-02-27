@@ -76,12 +76,33 @@
 #for x,y in zip(X,Y): #解壓縮
 #    print(x,y)
 #------------------------
+#mathScores=[60,70,10,20,81,63,4]
+#l=len(mathScores)
+#for i in range(0,l):
+#    print((i,mathScores[i]))
+#for item in mathScores:
+#    item=item*10
+#    print(item)
+#for index,item in enumerate(mathScores):
+#    print(index,item)
+#-----------------------------------
+#count=0
+#while count<10: #用while要小心出現無窮迴圈
+#    print(count)
+#    count+=1
+#else:
+#    print('coint>=10')
+#--------------------------------
+#跳出迴圈
 mathScores=[60,70,10,20,81,63,4]
-l=len(mathScores)
-for i in range(0,l):
-    print((i,mathScores[i]))
+#for item in mathScores:
+#    if item>80:
+#        break
+#    print(item)
+#mathScores=[60,70,10,20,81,63,4]
+
+#以下的程式碼都跳過，直接進行下一次迴圈
 for item in mathScores:
-    item=item*10
+    if item>80:
+        continue
     print(item)
-for index,item in enumerate(mathScores):
-    print(index,item)
